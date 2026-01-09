@@ -39,7 +39,7 @@ resource "aws_db_subnet_group" "this" {
 # Security Group para o RDS
 resource "aws_security_group" "this" {
   name        = var.security_group_name
-  description = "Allow PostgreSQL traffic for FIAP SOAT - Clientes"
+  description = "Allow PostgreSQL traffic for FIAP SOAT - Categorias"
   vpc_id      = data.aws_vpc.selected.id
 
   ingress {
@@ -91,6 +91,6 @@ resource "aws_db_instance" "this" {
     Name        = var.db_identifier
     Environment = var.environment
     Project     = "fiap-soat"
-    Service     = "clientes"
+    Service     = "categorias"
   }
 }

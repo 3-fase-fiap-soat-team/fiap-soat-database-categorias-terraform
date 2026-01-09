@@ -1,7 +1,7 @@
 variable "db_identifier" {
   description = "Identificador único da instância RDS"
   type        = string
-  default     = "fiap-soat-db-clientes"
+  default     = "fiap-soat-db-categorias"
 }
 
 variable "db_name" {
@@ -53,13 +53,13 @@ variable "use_default_vpc" {
 variable "db_subnet_group_name" {
   description = "Nome do DB Subnet Group"
   type        = string
-  default     = "fiap-soat-clientes-subnet-group"
+  default     = "fiap-soat-categorias-subnet-group"
 }
 
 variable "security_group_name" {
   description = "Nome do Security Group"
   type        = string
-  default     = "fiap-soat-clientes-rds-sg"
+  default     = "fiap-soat-categorias-rds-sg"
 }
 
 variable "allowed_cidr_blocks" {

@@ -10,7 +10,7 @@ module "rds" {
   source = "../../modules/rds"
 
   # Database Configuration
-  db_name              = "fiapdb_clientes"
+  db_name              = "fiapdb_categorias"
   db_username          = "postgresadmin"
   db_password          = var.db_password
   db_instance_class    = "db.t3.micro"
@@ -25,7 +25,7 @@ module "rds" {
   publicly_accessible  = false
   
   # Naming
-  db_identifier        = "fiap-soat-db-clientes"
+  db_identifier        = "fiap-soat-db-categorias"
   environment          = "dev"
 }
 
