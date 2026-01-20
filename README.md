@@ -5,12 +5,6 @@ Terraform para RDS PostgreSQL - Fase 3
 ## 🎯 **Objetivo**
 Provisionar e gerenciar infraestrutura de banco de dados PostgreSQL na AWS usando Terraform, otimizado para AWS Academy.
 
-## 👨‍💻 **Responsável**
-- **Dev 1 (MathLuchiari)** - Database + Lambda
-- **Repositórios:** `fiap-soat-database-terraform` + `fiap-soat-lambda`
-- **Foco:** RDS PostgreSQL + Autenticação via CPF
-- **Tecnologias:** Terraform, AWS RDS, PostgreSQL, VPC, Security Groups
-
 ## 📁 **Estrutura do Projeto**
 ```
 environments/
